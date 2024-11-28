@@ -1,6 +1,7 @@
 # Durk's Bad Update Tracking Tool 
 
-REQUIREMENTS: Python (duh) and `json, time, requests, websocket` pip packages, i think there is two websocket packages available, if one doesnt work get the other IG i dont remember which one to use
+REQUIREMENTS: Python (duh), `requests`, and `websocket-client` pip packages, make SURE you install `websocket-client` and not `websocket`
+
 You also need to set a watchdog token in your server_config.toml, like this
 ```
 [watchdog]
