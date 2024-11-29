@@ -120,7 +120,7 @@ def get_watchdog_token():
         response.raise_for_status()
         config_data = response.text
         for line in config_data.splitlines():
-            if "token" in line:
+            if line.strip().startswith("token"):
                 return line.split("=")[1].strip().strip('"')
     except requests.exceptions.RequestException as e:
         print("GET request failed:", e)
